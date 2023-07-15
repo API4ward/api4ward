@@ -1,0 +1,63 @@
+{"erow":[
+    {
+        "type": "function",
+        "name": "translate",
+        
+        "description":"Translate the following review to english: {review} ",
+        "input_variables": ["review"],
+        "parameters": 
+            {
+                "review": {
+                    "type": "string",
+                    "description": "A review to translate"
+                }
+            }
+        
+    },
+
+    {
+        "name": "summarize",
+        "description":"Can you summarize the following review in 1 sentence:\n\n{English_Review}",
+        "input_variables": ["English_Review"],
+        "parameters": 
+            {
+                "English_Review": {
+                    "type": "string",
+                    "description": "A review to translate"
+                }
+            }
+    },
+
+    {
+        "name": "detect language",
+        
+        "description":"What language is the following review in:\n\n{review}",
+        "input_variables": ["review"],
+        "parameters": 
+            {
+                "review": {
+                    "type": "string",
+                    "description": "A review to translate"
+                }
+            }
+    },
+
+    {
+        "name": "response",
+        
+        "description": "Write a follow up response to the following summary in the specified language: \n\nSummary: {summary}\n\nLanguage: {language}",
+        "input_variables": ["summary", "language"],
+        "parameters": 
+            {
+                "summary": {
+                    "type": "string",
+                    "description": "A review to translate"
+                },
+                "language": {
+                    "type": "string",
+                    "description": "the language to response"
+                }
+            }
+
+    }
+]}
